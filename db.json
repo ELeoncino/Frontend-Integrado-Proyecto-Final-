@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": "2",
+      "name": "📊Finish project report",
+      "isCompleted": false,
+      "description": "📝Complete the final report for the project.",
+      "creator": "Bob"
+    },
+    {
+      "id": "3",
+      "name": "🏥Schedule doctor appointment",
+      "isCompleted": false,
+      "description": "👨‍⚕️Annual check-up with Dr. Smith.",
+      "creator": "Charlie"
+    },
+    {
+      "id": "4",
+      "name": "🧹Clean the house",
+      "isCompleted": false,
+      "description": "🧼Vacuum, dust, and organize the living room.",
+      "creator": "Diana"
+    },
+    {
+      "id": "5",
+      "name": "📖Read a book",
+      "isCompleted": false,
+      "description": "📚Finish reading 'The Great Gatsby'.",
+      "creator": "Ethan"
+    },
+    {
+      "id": "1730679377094",
+      "name": "Mudarme",
+      "description": "juntar mis cosas e irme pronto",
+      "creator": "Leo",
+      "isCompleted": false
+    }
+  ]
+}
