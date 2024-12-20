@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import "./LoginPage.css";
 
 const LoginPage = ({ onLogin }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState(null);
-  const [isRegistering, setIsRegistering] = useState(false); // Estado para alternar entre registro e inicio de sesión
+  const [isRegistering, setIsRegistering] = useState(false); // Alternar entre registro e inicio de sesión
 
   // Manejar el envío del formulario de inicio de sesión
   const handleLoginSubmit = async (e) => {
@@ -65,9 +66,8 @@ const LoginPage = ({ onLogin }) => {
 
   return (
     <div className="login-page">
-      <h2>{isRegistering ? "Registrar Usuario" : "Iniciar Sesión"}</h2>
+      <h2>To-Do List by Leoncino</h2> {/* Cambiar el título */}
       {error && <p className="error">{error}</p>}
-
       {isRegistering ? (
         // Formulario de registro
         <form onSubmit={handleRegisterSubmit}>
@@ -114,7 +114,6 @@ const LoginPage = ({ onLogin }) => {
           <button type="submit">Iniciar Sesión</button>
         </form>
       )}
-
       {/* Alternar entre registro e inicio de sesión */}
       <p>
         {isRegistering ? (
