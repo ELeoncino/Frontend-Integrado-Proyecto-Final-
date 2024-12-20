@@ -154,7 +154,7 @@ form button:hover {
 
 .task-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Alineación superior */
   justify-content: space-between;
   padding: 10px;
   margin: 10px 0;
@@ -180,9 +180,12 @@ form button:hover {
   cursor: pointer;
 }
 
+/* Text Content */
 .text-content {
   flex-grow: 1;
   margin-left: 10px;
+  overflow-wrap: break-word; /* Asegura que el texto largo se ajuste */
+  word-break: break-word;
 }
 
 .text-content .name {
@@ -198,7 +201,13 @@ form button:hover {
 
 .text-content .creator {
   font-size: 0.9rem;
-  color: #f1faee;
+  color: #7f8c8d; /* Gray for 'Created by' label */
+}
+
+.text-content .creator-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #2ecc71; /* Green for creator name */
 }
 
 /* Buttons */
@@ -206,6 +215,7 @@ form button:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  align-items: flex-end; /* Asegura que los botones estén alineados */
 }
 
 .edit-button,
